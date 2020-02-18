@@ -5,6 +5,8 @@ github_ssh
 
 Securing your GitHub account and repos makes interacting with said repos, a little cumbersome; always requiring a password or token for verification before a push (or pull if repo is private).
 
+2FA on your account is a must, but dealing with passwords on every push (or pull of a private repo), is a pain.
+
 The other solution is to add ssh keys to your account, which gives global access to **all** repos so you can push up anywhere to anything, unabated. Kind of like using a sledge hammer to hammer a nail.
 
 The only other option is to generate ssh keys for each repo and then add them to the 'deploy keys' section in settings, for that specific repository. But how do you keep all those keys organized, and configure ssh to select the correct keys to use for that particular repository, and configure the local .git/config file of your repo to use the correct url?
